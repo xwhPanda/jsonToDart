@@ -27,6 +27,10 @@ patchPluginXml {
       Add change notes here.<br>
       <em>most HTML tags may be used</em>"""
 }
+publishPlugin{
+    channels = ['Stable']
+    token = 'eHdoMTk5MHh3aA==.OTItNjAyNw==.nQxKT9goj3BJRI4F6zXerzpJqlW0oQ'
+}
 test {
     useJUnitPlatform()
 }
