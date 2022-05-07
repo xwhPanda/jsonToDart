@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>com.xwh.jsonToDart</id>
+    <name>JsonToDartSimple</name>
+    <vendor email="1152046774@qq.com"></vendor>
+
+    <description>Json数据转Dart实体</description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
+
+    <depends>com.intellij.modules.json</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.all</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>Dart</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>io.flutter</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+<!--        <action id="JsonToDart.Action" class="JsonToDartAction" text="JsonToDart Action">-->
+<!--            <add-to-group group-id="CodeMenu" anchor="last"/>-->
+<!--        </action>-->
+
+        <action id="JsonToDart" class="JsonToDartAction" text="JsonToDart">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFile"/>
+<!--            <keyboard-shortcut keymap="$default" first-keystroke="alt s"/>-->
+        </action>
+    </actions>
+</idea-plugin>
